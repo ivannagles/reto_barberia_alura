@@ -1,0 +1,336 @@
+/* aplica a toda la página */
+
+body{
+    font-family: 'Poppins', sans-serif;
+}
+
+
+/* CSS aplica al header de la pagina */
+
+header{
+    background-color: #cccccc;
+    padding: 20px 0;
+}
+
+.caja{
+    width: 70%;
+    position:relative;
+    margin: 0 auto;
+}
+
+nav li{
+    display:inline;
+    margin: 0 0 0 10px;
+}
+
+nav{
+    position: absolute;
+    top: 120px;
+    right: 0;
+    }
+
+nav a{
+    text-transform: uppercase;
+    color: #000000;
+    font-weight: bold;
+    font-size: 22px;
+    text-decoration: none;
+}
+
+nav a:hover{
+    color: #c78c19;
+    text-decoration: underline;
+}
+
+
+/* CSS para el footer */
+
+footer{
+    text-align: center;
+    background: url(imagenes/bg.jpg);
+    padding: 40px;
+}
+
+.copyright{
+    color: #cccccc;
+    font-size: 13px;
+    margin: 20px;
+}
+
+
+/* CSS que aplica a la página del home */
+
+.principal{
+    padding: 1em 0;
+    background:#fefefe;
+    width: 70%;
+    margin: 0 auto;
+}
+
+.banner{
+    width: 100%;
+}
+
+
+.tituloPrincipal{
+    text-align: center;
+    font-weight: bold;
+    font-size: 30px;
+    margin: 20px 25px;
+    clear:left; /* hace que flote */
+    color: rgb(0, 0, 0);
+    text-shadow: 2px 2px 2px white;
+    padding: 3 0px;
+}
+
+.principal p{
+    margin:0 0 1em;
+    line-height: 2;
+    
+}
+
+.principal strong{
+    font-weight: bold;
+}
+
+.principal em{
+    font-style: italic;
+}
+
+.utensilios{
+    width: 120px;
+    float: left;
+    margin:0 20px 20px 0; /* arriba, derecha, abajo, izq */
+}
+
+.mapa{
+    padding: 15px;
+    background: linear-gradient(#fefefe, #888888);
+}
+
+.mapa p{
+    margin: 20px;
+    text-align: center;
+}
+
+.mapa-iframe{
+    width: 940px;
+    margin: 0 auto;
+}
+
+.diferenciales{
+    padding: 1em 0;
+    background: #888888;
+    margin: 0 auto;
+}
+
+.dif-content{
+    width: 940px;
+    margin: 0 auto;
+}
+
+.dif-list{
+    width: 40%; /* la imagen ocupa el 60% del 100% del espacio */
+    display: inline-block;
+    vertical-align:top;
+}
+
+.items{
+    line-height: 2;
+}
+
+.items:before{
+    content: "★";
+    color: #cccccc;
+}
+
+.imgDiferenciales{
+    width: 60%; /* la lista ocupa el 40% del 100% del espacio */
+    transition: 1s;
+    box-shadow: 10px 10px 10px 5px black; /* ejeX  ejeY difuminar expansion */
+}
+
+.imgDiferenciales:hover{
+    opacity: 99%;
+}
+
+.video{
+    width: 30%;
+    margin: 0 auto;
+    padding: 30px;
+}
+
+
+/* CSS para la página de productos */
+
+.productos{
+    width: 80%;
+    margin: 10px auto;
+    padding: 20px;
+}
+
+.productos li{
+    display:inline-block;
+    text-align: center;
+    width: 30%;
+    vertical-align: top;
+    margin: 10px 5px;
+    box-sizing: border-box;
+    padding: 20px 20px;
+    border-color: #000000;
+    border: 2px solid #000000;
+    border-radius: 10px 10px 10px 10px;
+ }
+
+ .productos li:hover{
+    color: #c78c19;
+    border-color: #c78c19;
+
+ }
+
+ .productos li:active{
+    border-color: #088c19;
+ }
+
+.productos h2{
+    font-size: 30px;
+    font-weight: bold;
+    
+}
+
+.productos li:hover h2{
+    font-size: 33px;
+}
+
+.prod-description{
+    font-size: 20px;
+}
+
+.prod-price{
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+
+
+/* CSS que aplica a la página de Contacto */
+
+form{
+    margin: 40px;
+}
+
+form label, form legend{
+    display: block;
+    font-size: 20px;
+    margin: 0 10px;
+    padding: 10px;
+}
+
+.input-patron{
+    display:block;
+    margin:  10px;
+    padding: 5px 50px;
+    width: 30%;
+}
+
+.checkbox{
+    margin: 5px 0px;
+}
+
+.select{
+    margin: 0 30px;
+}
+
+.enviar{
+    width: 20%;
+    padding: 15px;
+    font-size: 18px;
+    font-weight: bold;
+    color: white;
+    background: orange;
+    margin: 0 30px;
+    border: none;
+    border-radius: 10px;
+    transition: 1s all;
+    cursor: pointer;
+}
+
+.enviar:hover{
+    background: green;
+    transform: scale(1.2);
+}
+
+table{
+    margin: 40px 145px;
+    
+}
+
+thead{
+    background: #555555;
+    color: white;
+    font-weight: bold;
+}
+
+td, th{
+    border: 1px solid #000000;
+    padding: 8px 15px;
+    
+}
+
+/* RESPONSIVE (MEDIA QUERY)*/
+
+@media screen and (max-width:480px){ /*si encuentras una pantalla de max hasta 480px aplique... */
+    
+    /* MEDIA QUERY PARA LA PAGINA DEL HOME */
+
+    h1{
+        text-align: center;
+    }
+
+    nav{
+        position:static;
+    }
+
+    nav a{
+        font-size: 14px;
+    }
+
+    .principal, .mapa-iframe, .dif-content, .video{
+        width: auto; 
+    }
+
+    .dif-list, .imgDiferenciales{ /*la lista de diferenciales como la imagen cada una debe ocupar el 100% del espacio */
+        width:100%;
+    }
+
+    /* MEDIA QUERY PARA LA PAGINA DE PRODUCTO */
+
+    .productos li{
+        width: 100%;
+    }
+
+     /* MEDIA QUERY PARA LA PAGINA DE CONTACTO */
+
+    .input-patron{
+        width: auto;
+        margin: 0 auto;
+    }
+
+    .enviar{
+        width: auto;
+        margin: 0 auto;
+    }
+
+    p{
+        text-align: center;
+    }
+
+    table{
+        width: auto;
+        margin: 20px auto;
+    }
+ 
+}
+
+
